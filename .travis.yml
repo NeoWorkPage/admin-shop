@@ -1,0 +1,11 @@
+sudo: false
+
+language: node_js
+node_js:
+  - 8.12.0
+
+branches:
+  only:
+    - master
+env:
+    - NODE_PATH=src
