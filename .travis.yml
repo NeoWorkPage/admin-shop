@@ -9,3 +9,6 @@ branches:
     - master
 env:
     - NODE_PATH=src
+
+script:
+    - npm run build:prod
