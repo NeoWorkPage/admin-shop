@@ -8,7 +8,7 @@ const footer = b.lock('footer');
 
 class FooterApp extends React.Component {
   render() {
-    return <Footer className={footer()}>Ant Design ©2018 Created by Ant UED</Footer>;
+    return <Footer className={footer()}>Shop Admin</Footer>;
   }
 }
 

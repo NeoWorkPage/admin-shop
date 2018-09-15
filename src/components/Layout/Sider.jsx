@@ -1,12 +1,20 @@
 import React from 'react';
 import { Layout, Menu, Icon } from 'antd';
+import { inject, observer } from 'mobx-react';
 
 const { Sider } = Layout;
 
+@inject('siderStore')
+@observer
 class SiderApp extends React.Component {
   render() {
+    const { siderStore } = this.props;
     return (
-      <Sider style={{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0 }}>
+      <Sider
+        collapsible
+        collapsed={siderStore.collapsed}
+        onCollapse={event => siderStore.setShowCollapsed(event)}
+        style={{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0 }}>
         <div className="logo" />
         <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
           <Menu.Item key="1">
