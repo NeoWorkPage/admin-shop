@@ -1,0 +1,26 @@
+.layout {
+  margin-left: 200px;
+  transition: all .2s;
+
+  &_active {
+    margin-left: 80px;
+  }
+
+  &__sider {
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+  }
+
+  &__content {
+    min-height: calc(100vh - 84px);
+    padding: 24px 16px;
+  }
+
+  .footer {
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+  }
+}

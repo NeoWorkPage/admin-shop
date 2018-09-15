@@ -8,12 +8,14 @@ import App from './components/App/index';
 
 import authStore from './stores/authStore';
 import commonStore from './stores/commonStore';
+import siderStore from './stores/layout/sider';
 
 const CONTEXT_ROOT = process.env.REACT_APP_CONTEXT_ROOT;
 
 const stores = {
   authStore,
   commonStore,
+  siderStore,
 };
 
 // For easier debugging

@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { inject, observer } from 'mobx-react';
 
 import Login from '../Login';
+import Layout from '../Layout';
 
 import './css/App.css';
 
@@ -22,7 +23,7 @@ class App extends Component {
     return (
       <React.Fragment>
         {authenticated ? (
-          <div>123123</div>
+          <Layout />
         ) : (
           <Switch>
             <Route path="/login" component={Login} />
