@@ -1,0 +1,72 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "worker": true,
+    "serviceworker": true,
+    "es6": true
+  },
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "parser": "babel-eslint",
+  "globals": {
+    "FontFaceObserver": true,
+    "fontFaceSet": true
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import",
+    "jest",
+    "prettier"
+  ],
+  "rules": {
+    "no-underscore-dangle": ["error", { "allow": ["_id", "_insertCss", "_getCss"] }],
+    "prettier/prettier": "error",
+    "indent": [
+      2,
+      2,
+      { "SwitchCase": 1 }
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "jsx-quotes": 1,
+    "react/display-name": 0,
+    "react/jsx-no-undef": 1,
+    "react/jsx-sort-props": 0,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
+    "react/no-multi-comp": 1,
+    "react/no-unknown-property": 1,
+    "react/react-in-jsx-scope": 1,
+    "react/self-closing-comp": 1,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "comma-dangle": 0,
+    "no-class-assign": 0,
+    "react/prop-types": 0,
+    "react/require-default-props": 0,
+    "arrow-body-style": 0,
+    "no-else-return": 0,
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-param-reassign": 0,
+    "no-nested-ternary": 0,
+    "no-return-assign": 0,
+    "no-confusing-arrow": 0,
+    "arrow-parens": 0,
+    "jsx-a11y/anchor-is-valid": [ "error", { "components": [ "Link" ], "specialLink": [ "to" ] } ],
+    "react/prefer-stateless-function": 0,
+    "react/destructuring-assignment": [1, "always", { "ignoreClassFields": true }]
+  },
+  "settings" : {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"],
+        "extenstions": [".js", ".jsx"]
+      }
+    }
+  }
+}
